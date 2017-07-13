@@ -36,10 +36,9 @@
                     <p>Вёрстка на HTML и CSS <br> Разработка сайтов под ключ</p>
                 </div>
               </div>
-             <a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
-            </div>
-            
-            <div class="portfolio" id="portfolio">
+              <a href="#portfolio" class="main-down slowly"><i class="icon-down"></i></a>
+  </div>
+<div class="portfolio" id="portfolio">
                <div class="container">
                   <h2 class="section-header">Портфолио</h2>
                   <div class="row">
@@ -111,18 +110,13 @@
     </script>
     <script>
       
-        $(document).ready(function() {
-            $(.slowly).on("click",function (event){
-            event.preventDefault();
-            var id = $(this).attr("href"),
-            top = $(id).offset().top;
-            $('body,html').animate({scrollTop:top},1500);
-            
-            
-            
-        });
-        });
-        
+   $(document).ready(function(){
+  $(".slowly").on("click", function(even){
+  event.preventDefault();
+  var id=$(this).attr("href"),top=$(id).offset().top;
+  $("body,html").animate({scrollTop: top},800);
+  });
+  });
         
       </script>
   </body>
